@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-
-
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -20,10 +17,10 @@
         );
         var Hello = React.createClass({
             render: function () {
-                return <h1>Hello for fun</h1>;
+                return <div><h1>Hello </h1><h2>I'm {this.props.name}</h2></div>;
             }
         });
-        ReactDOM.render(<Hello/>, document.getElementById('hello'));
+        ReactDOM.render(<Hello name="Tien"/>, document.getElementById('hello'));
         </script>
     </body>
 </html>
